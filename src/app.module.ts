@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { RecipesModule } from './recipes/recipes.module';
+import { RecipeModule } from './recipe/recipe.module';
 import entities from './typeorm';
 
 @Module({
@@ -21,7 +21,7 @@ import entities from './typeorm';
       }),
       inject: [ConfigService],
     }),
-    RecipesModule,
+    RecipeModule,
   ],
   controllers: [],
   providers: [],

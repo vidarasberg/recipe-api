@@ -15,9 +15,9 @@ export class Recipe {
   name: string;
 
   @Column({
-    name: 'email_address',
+    name: 'url',
     nullable: false,
     default: '',
   })
-  link: URL;
+  link: string;
 }
